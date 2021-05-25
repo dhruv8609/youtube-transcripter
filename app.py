@@ -1,9 +1,10 @@
 from flask import Flask, request, render_template, jsonify
 from youtube_transcript_api import YouTubeTranscriptApi
 from transformers import pipeline
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 model_path = './summarizer_model'
 
@@ -59,9 +60,9 @@ def home_function():
     try:
         transcript = get_transcript(video_id)
         summary_final = get_summary(transcript)
-        return jsonify({'url': transcript, 'summary': summary_final})
+        return jsonify({'message': summary_final})
     except:
-        return jsonify({'url': 'ERROR:Check the URL or try again with different URL'})
+        return jsonify({'message': 'ERROR:Check the URL or try again with different URL'})
 
 
 if __name__ == '__main__':

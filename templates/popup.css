@@ -1,0 +1,26 @@
+.btn{
+    background-color: blue;
+    color: white;
+    height: 30px;
+    justify-content: center;
+    box-shadow: 4px 4px #837e7e;
+    cursor: pointer;
+}
+.btn.activebtn{
+    margin-left: 35%;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    justify-content: center;
+    box-shadow: 4px 4px #837e7e;
+}
+
+.active{
+    height: 500px;
+    width: 500px;
+    margin: 20px auto;
+    background-color: #888888;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
