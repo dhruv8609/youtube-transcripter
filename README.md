@@ -6,10 +6,9 @@ This uses Flask framework as a back-end to receive API calls and then respond wi
 
 
 
-
-
-
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+
+![](/summarizer_model/demonstration.gif)
 
 ## Setting up project
 
