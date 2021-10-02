@@ -23,17 +23,20 @@ chrome.runtime.onMessage.addListener(
       // chrome.tabs.query({active: true}, function(tabs) {
       //    videourl = tabs[0].url;
       //});
+      console.log(request.url);
       fetch(`http://127.0.0.1:5000/api/summarize?youtube_url=${request.url}`)
       .then(res=>res.json())
       .then(result=>{
-        console.log(result)
+        //console.log('reached near message');
+        console.log(result.message);
         sendResponse({message: result});
+        //sendResponse({message:"hi there"});
       })
       .catch(err=>{
         console.log('error generated')
         sendResponse({message:err})
       });
-      
+      return true;
     }
   }
       
