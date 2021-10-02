@@ -30,3 +30,6 @@ $ <my_env_name>\Scripts\activate
 $ cd my-project
 $ pip install requirements.txt
 $ python app.py
+````
+
+## [Demo Images](summarizer_model/ss1.jpeg)
